@@ -93,7 +93,7 @@ These are the notes from a meeting with the frontend developer that describe wha
 
 **orders**
 
-    /orders**
+    /orders
         - Method [POST]
         - Route: `/`
         - Description: Create a new order
