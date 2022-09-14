@@ -18,7 +18,12 @@ Setup and connect to database:
 - Clone the repo on the machine.
 - Install all dependencies and devDependencies by running `npm i` or `npm install` command.
 - Create two database using postgreSQL then Added user role and password to access this databases. 
-- Create file `.env` and using the same keys into the environment file `.env.example` and added values to these keys.
+- Create user and password to using database `CREATE USER store_user WITH PASSWORD 'password123';`
+- Create database `CREATE DATABASE store_dev;` to use for development.
+- Create database `CREATE DATABASE store_test;` to use for testing.
+- Use `GRANT ALL PRIVILEGES ON DATABASE store_dev TO store_user;` 
+- and `GRANT ALL PRIVILEGES ON DATABASE store_test TO store_user;` to give the user PRIVILEGES on this databases.
+- Create file `.env` and using the same keys which in the environment file `.env.example` and added values to these keys.
 - The project running port on: `4000`.
 - Run project using script `npm run watch` or `npm run dev` to insure that any thing working done.
 - Run migrations file after create database and set valuses into `.env` using script `npm run migate` or `db-migarte up` to added table into database.
