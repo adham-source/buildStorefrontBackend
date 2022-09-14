@@ -47,19 +47,16 @@ These are the notes from a meeting with the frontend developer that describe wha
 - http://localhost:4000/api
 
 **Users**
-
     **/users**
         - Method [POST]
         - Route: `/register`
         - Description: Create a new user
         - Body: name, email, password
-
     - **/users**
         - Method [POST]
         - Route: `/login`
         - Description: Logged in (auth) and generate token
         - Body: email, password
-        
     - **/users**
         - Method [GET]
         - Route: `/`
@@ -75,8 +72,9 @@ These are the notes from a meeting with the frontend developer that describe wha
         - Route: `/:id`
         - Description: Delete the user by id.
         - x-auth-header: `Bearer token.....`
+
 **Products**
-    - **/products**
+    **/products**
         - Method [POST]
         - Route: `/`
         - Description: Create a new product
@@ -90,8 +88,9 @@ These are the notes from a meeting with the frontend developer that describe wha
         - Method [GET]
         - Route: `/:id`
         - Description: Get product
+
 **orders**
-    - **/orders**
+    **/orders**
         - Method [POST]
         - Route: `/`
         - Description: Create a new order
