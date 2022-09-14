@@ -74,7 +74,8 @@ These are the notes from a meeting with the frontend developer that describe wha
         - x-auth-header: `Bearer token.....`
 
 **Products**
-    **/products**
+
+    - **/products**
         - Method [POST]
         - Route: `/`
         - Description: Create a new product
@@ -90,7 +91,8 @@ These are the notes from a meeting with the frontend developer that describe wha
         - Description: Get product
 
 **orders**
-    **/orders**
+
+    - **/orders**
         - Method [POST]
         - Route: `/`
         - Description: Create a new order
