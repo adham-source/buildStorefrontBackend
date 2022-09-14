@@ -75,7 +75,7 @@ These are the notes from a meeting with the frontend developer that describe wha
 
 **Products**
 
-    **/products**
+    - /products
         - Method [POST]
         - Route: `/`
         - Description: Create a new product
