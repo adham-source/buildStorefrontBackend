@@ -75,17 +75,17 @@ These are the notes from a meeting with the frontend developer that describe wha
 
 **Products**
 
-    - **/products**
+    **/products**
         - Method [POST]
         - Route: `/`
         - Description: Create a new product
         - Body: name, price
         - x-auth-header: `Bearer token.....`
-    - **/products**
+    
         - Method [GET]
         - Route: `/`
         - Description: Get all products
-    - **/products**
+    
         - Method [GET]
         - Route: `/:id`
         - Description: Get product
