@@ -4,21 +4,28 @@ The company stakeholders want to create an online storefront to showcase their g
 These are the notes from a meeting with the frontend developer that describe what endpoints the API needs to supply, as well as data shapes the frontend and backend have agreed meet the requirements of the application. 
 
 ## Tables design and datatypes
+
 - `EXTENSION IF NOT EXISTS "uuid-ossp"`
+
 **Users**
+
     - `TABLE users(
         id uuid DEFAULT uuid_generate_v4 () PRIMARY KEY,
         name VARCHAR(150) NOT NULL,
         email VARCHAR(150) UNIQUE NOT NULL,
         password text NOT NULL
     )`
+
 **Products**
+
     - `TABLE products(
         id uuid DEFAULT uuid_generate_v4 () PRIMARY KEY,
         name VARCHAR(100) NOT NULL,
         price integer NOT NULL
     )`
+
 **Ordres**
+
     - `TYPE order_status AS ENUM ('active', 'complete')`
     - `TABLE orders(
         id uuid DEFAULT uuid_generate_v4 () PRIMARY KEY,
@@ -28,6 +35,7 @@ These are the notes from a meeting with the frontend developer that describe wha
     )`
 
 **Order_Products**
+
     - `TABLE orders(
         id uuid DEFAULT uuid_generate_v4 () PRIMARY KEY,
         user_id uuid DEFAULT uuid_generate_v4 () NOT NULL,
