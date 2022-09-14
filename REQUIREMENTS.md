@@ -47,16 +47,19 @@ These are the notes from a meeting with the frontend developer that describe wha
 - http://localhost:4000/api
 
 **Users**
-    - **/users**
+
+    **/users**
         - Method [POST]
         - Route: `/register`
         - Description: Create a new user
         - Body: name, email, password
+
     - **/users**
         - Method [POST]
         - Route: `/login`
         - Description: Logged in (auth) and generate token
         - Body: email, password
+        
     - **/users**
         - Method [GET]
         - Route: `/`
