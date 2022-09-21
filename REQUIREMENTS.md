@@ -38,9 +38,11 @@ These are the notes from a meeting with the frontend developer that describe wha
 
     - `TABLE orders(
         id uuid DEFAULT uuid_generate_v4 () PRIMARY KEY,
-        user_id uuid DEFAULT uuid_generate_v4 () NOT NULL,
-        status order_status NOT NULL,
-        CONSTRAINT fk_user FOREIGN KEY(user_id) REFERENCES users(id)
+        quantity integer,
+        order_id uuid DEFAULT uuid_generate_v4 () NOT NULL,
+        product_id uuid DEFAULT uuid_generate_v4 () NOT NULL,
+        CONSTRAINT fk_order FOREIGN KEY(order_id) REFERENCES orders(id),
+        CONSTRAINT fk_product FOREIGN KEY(product_id) REFERENCES products(id)
     )`
 
 ## API Endpoints
